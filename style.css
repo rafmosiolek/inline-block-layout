@@ -1,5 +1,6 @@
 body {
     background-color: #c0392b;
+    font-family: "EB Garamond"
 }
 
 .nav {
@@ -10,4 +11,8 @@ body {
 .column {
     display: inline-block;
 
+}
+
+section h1 {
+    font-family: "Montserrat"
 }
