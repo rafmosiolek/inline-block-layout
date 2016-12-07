@@ -1,18 +1,75 @@
 body {
     background-color: #c0392b;
-    font-family: "EB Garamond"
+    font-family: "EB Garamond";
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .nav {
     display: inline-block;
+    vertical-align: top;
+    padding: 80px 50px 10px 10px;
+
 
 }
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 34px;
+
+}
+
+.nav ul li a:active {
+    color: #f1c40f;
+}
+
+
 
 .column {
+
     display: inline-block;
+    vertical-align: top;
+    width: 60%;
+
+
 
 }
 
-section h1 {
-    font-family: "Montserrat"
+.column h1 {
+    font-family: "Montserrat";
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.column section {
+    padding: 1em;
+    column-count: 3;
+    column-gap: 1em;
+    -moz-column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1em;
+    text-align: justify;
+
+}
+
+
+.column section p span {
+    float: left;
+    font-size: 75px;
+    line-height: 80%;
+    padding: 4px 8px 0px 3px;
+
 }
