@@ -4,20 +4,18 @@ body {
 
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .nav {
     display: inline-block;
-    vertical-align: top;
-    padding: 80px 50px 10px 10px;
-
+    float: left;
+    width: 20%;
+    padding-top: 50px;
 
 }
 
 .nav ul {
     list-style: none;
+    padding: 10px;
 }
 
 .nav ul li {
@@ -40,9 +38,8 @@ body {
 .column {
 
     display: inline-block;
-    vertical-align: top;
-    width: 60%;
-
+    float: left;
+    width: 70%;
 
 
 }
@@ -72,4 +69,36 @@ body {
     line-height: 80%;
     padding: 4px 8px 0px 3px;
 
+}
+
+/*  MEDIA QUERIES   */
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+    .nav {
+        padding-top: 0px;
+        padding-left: 15px;
+        margin: auto;
+    }
+    .nav ul {
+        display: table-row;
+    }
+    .nav ul li {
+        display: table-cell;
+    }
+    .nav ul li a {
+        font-size: 18px;
+    }
+    .column {
+        float: left;
+        width: 100%;
+    }
+
+    .column h1 {
+        padding-left: 0px;
+        font-size: 20px;
+    }
 }
